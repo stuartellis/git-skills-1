@@ -2,7 +2,8 @@
 
 PROJECT_NAME=`basename ${PWD}`
 BUILDER_IMAGE_VERSION=`cat ./Dockerfile | grep "version" | grep -oe "[0-9]\+[.][0-9]\+[.][0-9]\+"`
-BUILDER_IMAGE_ID="$PROJECT_NAME-builder:$BUILDER_IMAGE_VERSION"
+GIT_BRANCH=`git rev-parse --abbrev-ref HEAD`
+BUILDER_IMAGE_ID="$PROJECT_NAME-builder:$BUILDER_IMAGE_VERSION-$GIT_BRANCH"
 
 case $1 in
   clean)
@@ -11,6 +12,7 @@ case $1 in
  info)
     echo "Project name: ${PROJECT_NAME}"
     echo "Docker builder image version: ${BUILDER_IMAGE_VERSION}"
+    echo "Git branch: ${GIT_BRANCH}"
     ;;
   serve)
     docker run --rm -p 1313:1313 --mount "type=bind,source=${PWD},destination=/var/local" $BUILDER_IMAGE_ID
