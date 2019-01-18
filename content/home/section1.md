@@ -27,8 +27,6 @@ weight = 10
 * Immensely powerful
 * Expects you to take control of your workflow
 
-(OK, the manual is just bad)
-
 ---
 
 # Three keys to unlock Git
@@ -48,4 +46,7 @@ weight = 10
 
 ---
 
-# Let's get a workflow going!
+# Let's Git going!
+
+(I could not resist...)
+
