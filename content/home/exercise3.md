@@ -1,7 +1,8 @@
 +++
-weight = 30
+weight = 60
 +++
 
-# Git is a database
+# Managing branches
 
 ----
+

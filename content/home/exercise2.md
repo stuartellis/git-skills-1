@@ -1,5 +1,5 @@
 +++
-weight = 20
+weight = 40
 +++
 
 # Git is a database
@@ -122,6 +122,10 @@ The *git log* command is the Swiss Army knife for querying Git:
 # Let's play around
 
     $ git help log
+
+1. Create a feature branch
+1. Write a *git log* command that works: use any options that you like
+1. Then use the *contents/home/log_snippets.md* to share it
 
 ----
 
