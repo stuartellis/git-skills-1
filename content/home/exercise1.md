@@ -89,12 +89,18 @@ Always prefix branch names with a owner ID (ticket ID or human user ID):
 
 # Now let's make a change...
 
-Edit the config.toml file, and delete the *custom_theme* line.
+Start up Hugo.
+
+Then, edit the config.toml file, and delete the *custom_theme* line.
 
 Stage and commit the change:
 
     git add config.toml (stage changes in this file)
     git commit -m "Change theme"
+
+----
+
+# Check the site again in the browser
 
 ----
 
