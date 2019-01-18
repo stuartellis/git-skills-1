@@ -1,15 +1,29 @@
-# Presentation
+# Git Skills 1
 
 This presentation is a Website built with the [Hugo](https://gohugo.io/) generator and the [reveal-hugo theme](https://reveal-hugo.dzello.com), which uses [reveal.js](https://github.com/hakimel/reveal.js).
 
 # Prerequisites
 
-* Docker: The Hugo application runs in a Docker container.
-* A UNIX shell: The utility script should work in any POSIX shell.
+* Hugo
+* A UNIX shell: On Windows, use the Git bash shell
+* Optional: Docker
 
 Use whichever text editor you prefer to edit the content.
 
-## Usage
+## Setup
+
+### Any OS
+
+Hugo is a self-contained binary. To set it up:
+
+1. Download the latest release from GitHub:
+1. Unzip the release
+1. Copy the *hugo* or *hugo.exe* file to the root of this project
+1. Make Hugo executable:
+
+    $ chmod 0700 ./hugo.exe
+
+### Docker on macOS
 
 The *do.sh* utility script provides tools for building and running the site.
 
@@ -19,7 +33,19 @@ Run the *setup* subcommand to build the Docker container:
 ./do.sh setup
 ```
 
+## Usage
+
+### Any OS
+
 To view the content, use the *serve* subcommand:
+
+```bash
+./hugo.exe serve
+```
+
+### Docker on macOS
+
+To view the content, use the *serve* subcommand of the script:
 
 ```bash
 ./do.sh serve
