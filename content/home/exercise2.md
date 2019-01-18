@@ -34,7 +34,7 @@ Working files are completely disposable.
 
 Git snapshots the working directory on each commit. Kind of.
 
-It records all staged changes, plus the state of unchanged files.
+It records an ideal world: the state of unchanged files, with your staged changes.
 
 It ignores changes that not been staged.
 
@@ -49,6 +49,21 @@ Examples:
 
 * Git uses diff to figure out lines added, lines removed, lines changed.
 * The *git revert* command creates a new commit that changes the same lines as the original, but does the opposite action in each case.
+
+----
+
+# Those commit IDs....
+
+* Git is content-addressable storage
+* Each commit ID is derived from the "content" for the commit
+* Specifically, 40 character SHA1s
+
+The "content":
+
+* The source tree of the commit (the snapshot bit)
+* The SHA1s of parent commits (merges have a parent per branch)
+* The author & committer metadata
+* The commit message
 
 ----
 
