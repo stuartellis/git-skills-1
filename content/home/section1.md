@@ -2,14 +2,22 @@
 weight = 10
 +++
 
-# Git is your central tool for projects
+# The developer trinity
+
+* Version control
+* Editor
+* Programming language
+
+----
+
+# Git is your basic tool for projects
 
 * Authoritative source of truth
 * Collective memory
 * Mechanism for collaboration
 * Foundation for all automation
 
----
+----
 
 # Git is not just for app code
 
@@ -19,7 +27,7 @@ weight = 10
 * Binaries, if you use *Large File Storage* (LFS) feature
 * Secrets storage (with 3rd-party tools)
 
----
+----
 
 # Engineering, not voodoo
 
@@ -27,7 +35,7 @@ weight = 10
 * Immensely powerful
 * Expects you to take control of your workflow
 
----
+----
 
 # Three keys to unlock Git
 
@@ -35,12 +43,12 @@ weight = 10
 * Branches are chains of commits
 * Engineer your workflow (don't let IDEs push you around)
 
----
+----
 
-# What We Going to Do
+# What we are going to do
 
 1. Exercise One: A Git-centric workflow
-1. Exercise Two: Git as a project database
+1. Exercise Two: Git is a database
 1. Exercise Three: Parallel realities with Git branches
 1. Bonus Exercise: Git + Docker for project environments
 
