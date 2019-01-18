@@ -5,5 +5,7 @@ outputs = ["Reveal"]
 
 # Git Skills Workshop 1
 
+"Fast-Action Demagicification"
+
 ---
 
