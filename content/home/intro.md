@@ -2,7 +2,7 @@
 weight = 10
 +++
 
-# The developer trinity
+# The development trinity
 
 * Version control
 * Editor
@@ -40,7 +40,7 @@ weight = 10
 # Three keys to unlock Git
 
 * Clean commits are the fundamental unit of work
-* Branches are chains of commits
+* Branches represent lines of development, by pointing to the most recent commit on that line
 * Engineer your workflow (don't let IDEs push you around)
 
 ----
