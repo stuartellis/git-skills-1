@@ -16,7 +16,7 @@ Use whichever text editor you prefer to edit the content.
 
 Hugo is a self-contained binary. To set it up:
 
-1. Download the latest release from GitHub:
+1. Download the latest release ZIP from GitHub: https://github.com/gohugoio/hugo/releases
 1. Unzip the release
 1. Copy the *hugo* or *hugo.exe* file to the root of this project
 1. Make Hugo executable:
