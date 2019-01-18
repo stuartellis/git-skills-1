@@ -10,3 +10,4 @@ isHTML = true
 
 [params.reveal_hugo]
 slide_number = true
+custom_theme = "reveal-hugo/themes/sunblind.css"
