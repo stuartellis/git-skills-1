@@ -26,12 +26,12 @@ weight = 80
 
 # So, why not create Docker images for commits?
 
-This project has a example shell script
+This project has an example shell script for a *build* container
+
+We can make this Website deployable by packaging the content into *release* Docker images
 
 ----
 
 # Over to you
-
-We can make this presentation Website deployable.
 
 How would we do it?

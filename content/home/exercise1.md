@@ -32,7 +32,7 @@ Especially whilst learning
 
 # Please follow along
 
-For the rest of this section, you're working
+For the rest of this section, we're doing stuff.
 
 ----
 
@@ -138,7 +138,9 @@ Then:
 
 # Careful staging makes clean commits
 
-Always consciously decide which files to add for a commit.
+Every time that you run *git add*, you are whitelisting changes.
+
+Don't get trigger-happy.
 
 Clean commits enable features like *revert* and *cherry-pick* to work
 
@@ -165,7 +167,9 @@ The default branch for integration is *master*, since it's guaranteed to be pres
 
 # Always pull before you push!
 
-Make this a habit, and you will never have rejected pushes
+Make this a habit, and you will never have rejected pushes.
+
+Remember that any shared branch can change without you.
 
 ----
 

@@ -39,7 +39,7 @@ weight = 10
 
 # Three keys to unlock Git
 
-* Clean commits are the fundamental unit of work
+* Clean commits: each commit should be a snapshot of a desired state
 * Branches represent lines of development, by pointing to the most recent commit on that line
 * Engineer your workflow (don't let IDEs push you around)
 

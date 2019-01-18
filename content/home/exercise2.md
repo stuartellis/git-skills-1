@@ -13,7 +13,7 @@ weight = 40
 # Where's the database, then?
 
 * The *.git* directory is the database
-* The main working directory is content
+* The main working directory is the source
 * The commit records are selective snapshots of the working directory
 
 ----
@@ -34,9 +34,11 @@ Working files are completely disposable.
 
 Git snapshots the working directory on each commit. Kind of.
 
+Git stores versions as files as *blobs* of file contents, plus metadata.
+
 It records an ideal world: the state of unchanged files, with your staged changes.
 
-It ignores changes that not been staged.
+It ignores changes that have not been staged.
 
 ----
 
@@ -45,9 +47,9 @@ It ignores changes that not been staged.
 "Git is a stupid content tracker"
 - Linus Torvalds
 
-Examples:
+Example features for text:
 
-* Git uses diff to figure out lines added, lines removed, lines changed.
+* Git runs *diff* on demand to figure out lines added, lines removed, lines changed between files.
 * The *git revert* command creates a new commit that changes the same lines as the original, but does the opposite action in each case.
 
 ----
@@ -91,7 +93,7 @@ Every commit, the ID is written into the file for the current branch
     $ cat .git/HEAD
     ref: refs/heads/master
 
-So ultimately, it is another pointer to the ID of the most recent commit.
+So ultimately, it is just another pointer to the ID of the most recent commit.
 
 ----
 
@@ -104,6 +106,28 @@ Internally, Git uses 40 character commit IDs.
     $ git show d9b12c2
 
 To be human-friendly, commits are referenced by their first seven characters in many places. 
+
+---
+
+# Examining individual commits
+
+    $ git show HEAD
+
+Notice that it's using diff to show the content of the commit.
+
+----
+
+# Comparing commits
+
+Let's call *git diff* ourselves.
+
+Show the diff between HEAD and the working directory:
+
+    $ git diff HEAD
+
+Show the diff between HEAD and the parent of HEAD:
+
+    $ git diff HEAD HEAD~1
 
 ----
 
@@ -134,7 +158,7 @@ The *git log* command is the Swiss Army knife for querying Git:
 
 ----
 
-# Let's play around
+# Round 1: CLI
 
     $ git help log
 
@@ -144,7 +168,7 @@ The *git log* command is the Swiss Army knife for querying Git:
 
 ----
 
-# Postscript: OK, there's a GUI
+# Round 2: OK, there's a GUI
 
 It's built-in to Git. Just type:
 
@@ -154,4 +178,4 @@ Cross-platform! Available in every Git distribution!
 
 It's equally ugly everywhere. Sorry.
 
-----
+The GitLens plugin for VS Code is an example of nicer UI.
